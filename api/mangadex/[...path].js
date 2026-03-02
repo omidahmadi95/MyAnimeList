@@ -20,7 +20,10 @@ export default async function handler(req, res) {
     });
 
     const { status, data } = await axios.get(targetUrl.toString(), {
-      headers: { Accept: 'application/json' },
+      headers: {
+        Accept: 'application/json',
+        'User-Agent': 'my-anime-list/1.0 (https://my-anime-list-theta.vercel.app)',
+      },
     });
 
     res.status(status).json(data);
