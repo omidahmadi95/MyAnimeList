@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = '/api/mangadex';
+const BASE_URL = 'https://api.mangadex.org';
 const COVER_URL = 'https://uploads.mangadex.org/covers';
 
 const api = axios.create({
